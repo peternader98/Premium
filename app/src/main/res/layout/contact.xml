@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Contact"
+    android:orientation="vertical"
+    android:id="@+id/contact">
+
+    <include
+        android:id="@+id/contact_info"
+        layout="@layout/contact_info"
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/message_view"
+        android:layout_above="@id/editor"
+        android:layout_below="@id/contact_info"></ListView>
+
+    <include
+        android:id="@+id/editor"
+        layout="@layout/editor"
+        />
+
+</RelativeLayout>
